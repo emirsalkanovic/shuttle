@@ -44,9 +44,10 @@ class Shuttle extends Component{
 		console.log("iz shuttle:", this.state);
 		return(
 			<div className="container airport">
-				<div className="text">
+				<div className="text-airport ">
+					<div className="bg"></div>
 					<h3>Sarajevo Airport Transfer</h3>
-					<p>Please fill a form with your details and submit it to book a ride. </p>
+					<p><strong>Please fill a form with your details and submit it to book a ride.</strong></p>
 				  <div className="row info">
 				  <div className="col-sm">
 					<h5>Why Sarajevo Shuttle?</h5>

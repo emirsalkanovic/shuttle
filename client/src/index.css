@@ -72,8 +72,13 @@ h2{
 	width: 8em;
 }
 
+.img-3{
+	height: 8em;
+	width: 12em;
+}
+
 .footer{
-	background-color: #222222;
+	background-color: #343A40;
   	color: white;
     text-align: center;
 }
@@ -119,4 +124,52 @@ i{
 
 .info h5{
 	margin-top: 5%;
+}
+
+.text-airport, .text-rent, .text-transfer {
+	text-align: center;
+	padding: 5%;
+	color: #343A40;
+	z-index: 1;
+	position: relative;
+}
+
+.text-airport .bg {
+	position: absolute;
+	background-image: url(./img/airport.jpg);
+	opacity: 0.3;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.text-rent .bg {
+	position: absolute;
+	background-image: url(./img/rent.png);
+	opacity: 0.3;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.text-transfer .bg {
+	position: absolute;
+	background-image: url(./img/transfer.jpg);
+	opacity: 0.3;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
 }

@@ -45,11 +45,19 @@ class RentACar extends Component{
 	render(){
 		return(
 			<div className="container rent">
-				<div className="text">
+				<div className="text-rent">
+					<div className="bg"></div>
 					<h3>Rent A Car</h3>
-					<p>We can find you best deals in Sarajevo for Rent a Car, our junior agent will 
-					provide you with various offers so you can choose the best deal for you.</p>
-					<img src="" />
+					<p><strong>We can find you best deals in Sarajevo for Rent a Car, our junior agent will 
+					provide you with various offers so you can choose the best deal for you.</strong></p>
+					<h5>Why our Rent A Car service?</h5>
+					<ul>
+						<li>We have more than 20 years experience working in tourism and hospitality industry. With our network you will have the best deal!</li>
+						<li>Various offers to choose from</li>
+						<li>Possibility of picking car on airport or any other location in town</li>
+						<li>Fully insured cars</li>
+						<li>Discount on petrol stations in Bosnia and Herzegovina</li>
+					</ul>
 				</div>
 				<form onSubmit={this.handleSubmit}>
 					<div className="row">

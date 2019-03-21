@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Mostar from '../img/mostar.jpg';
+import Blagaj from '../img/buna.jpg';
+import Jajce from '../img/jajce.jpg';
+import Rama from '../img/ramsko jezero.jpg';
+
 class Transfers extends Component{
 	constructor(){
 		super()
@@ -43,9 +48,29 @@ class Transfers extends Component{
 	render(){
 		return(
 			<div className="container transfers">
-				<div className="text">
+				<div className="text-transfer">
+					<div className="bg"></div>
 					<h3>Transfers to any destination in Bosnia and Herzegovina</h3>
-					<p>We offer you safe and professional service for traveling and visiting other towns in Bosnia or region. </p>
+					<p><strong>We offer you safe and professional service for traveling and visiting other towns in Bosnia or region.</strong></p>
+					<h5>Towns worth visiting</h5>
+					<div className="row">
+						<div className="col-sm">
+							<h6>Mostar</h6>
+							<img className="img-3" src={Mostar} />
+						</div>
+						<div className="col-sm">
+							<h6>Blagaj</h6>
+							<img className="img-3" src={Blagaj} />
+						</div>
+						<div className="col-sm">
+							<h6>Jajce</h6>
+							<img className="img-3" src={Jajce} />
+						</div>
+						<div className="col-sm">
+							<h6>Ramsko Lake</h6>
+							<img className="img-3" src={Rama} />
+						</div>
+					</div>
 				</div>
 				<form onSubmit={this.handleSubmit}>
 					<div className="row">
