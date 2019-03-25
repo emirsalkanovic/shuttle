@@ -1,7 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const keys = require('./keys/dev');
 const app = express();
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,8 +25,8 @@ app.post('/contacts/form', (req, res) => {
 			port: 587,
 			tls: { rejectUnauthorized: false },
 			auth: {
-				user: 'shuttlesarajevo@gmail.com',
-				pass: 'programiranje7'
+				user: keys.email,
+				pass: keys.password
 			}
 		})
 
@@ -68,8 +70,8 @@ app.post('/shuttle/form', (req, res) => {
 			port: 587,
 			tls: { rejectUnauthorized: false },
 			auth: {
-				user: 'shuttlesarajevo@gmail.com',
-				pass: 'programiranje7'
+				user: keys.email,
+				pass: keys.password
 			}
 		})
 
@@ -113,8 +115,8 @@ app.post('/rent/form', (req, res) => {
 			port: 587,
 			tls: { rejectUnauthorized: false },
 			auth: {
-				user: 'shuttlesarajevo@gmail.com',
-				pass: 'programiranje7'
+				user: keys.email,
+				pass: keys.password
 			}
 		})
 
